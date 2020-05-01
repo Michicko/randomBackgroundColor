@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Background Color Changer</title>
+</head>
+<style>
+    .container{
+       top: 0; 
+       left: 0;
+       bottom: 0;
+       right: 0;
+       height: 100%;
+       width: 100%;
+       position: absolute;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+       
+    }
+    #color {
+        margin-bottom: 10px;
+        font-size: 1.5rem;
+        color: #333;
+    }
+    .btn {
+        padding: 10px 15px;
+        border: 1px solid #cecece;
+        background: #fff;
+        color: #333;
+        outline: none;
+    }
+    .btn:active{
+        transform: scale(.95);
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="color"></div>
+     <div class="btn-div">
+        <button id="change" class="btn">Change Background Color</button>
+    </div>   
+    </div>
+    
+
+    <script src="js/app.js"></script>
+</body>
+</html>
